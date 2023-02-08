@@ -33,15 +33,13 @@ nav a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("images/introduce.jpg");
   background-size: 100%;
-  display: flex;
   position: relative;
   top: 70px;
   width: 100%;
   height: 350px;
-  align-items: center;
-  justify-content: center;
+  line-height: 350px;
+  text-align: center;
   color: white;
-  /* filter: brightness(80%); */
   font-size: 70px;
   font-weight: bold;
 }
@@ -101,4 +99,14 @@ strong {
 #lohas {
   display: table-cell;
   vertical-align: middle;
+}
+
+#footer {
+  display: flex;
+  margin-top: 100px;
+  background-color: #75bf7a;
+  height: 100px;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
 }

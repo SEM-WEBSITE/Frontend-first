@@ -9,7 +9,7 @@
 nav {
   position: absolute;
   top: 80px;
-  right: 75px;
+  left: 950px;
 }
 
 nav a {
@@ -95,5 +95,10 @@ strong {
 }
 
 #company {
+  vertical-align: middle;
+}
+
+#lohas {
+  display: table-cell;
   vertical-align: middle;
 }

@@ -118,28 +118,6 @@ section .imgText {
   font-weight: bold;
 }
 
-/* section */
-section .sectionPage {
-  position: relative;
-  width: 100%;
-  margin: 10px auto;
-}
-.sectionPage img {
-  width: 100%;
-  height: 100%;
-  filter: brightness(80%);
-}
-
-section .imgText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: var(--font-midium);
-  font-weight: bold;
-}
-
 #faq {
   width: 100%;
   text-align: center;
@@ -159,7 +137,7 @@ section .imgText {
   display: flex;
   justify-content: space-between;
   padding-inline: 100px;
-  background-color: #75bf7a;
+  background-color: #7fb77e;
   margin-inline: 400px;
   padding-block: 100px;
   border-radius: 30px;

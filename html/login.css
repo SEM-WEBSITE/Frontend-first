@@ -1,88 +1,148 @@
 @charset "utf-8";
 
-.logo {
-  position: relative;
-  top: 30px;
-  left: 50px;
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #2b90d9;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+  --green-light-color: #7fb77e;
+  --green-middle-color: #43a341;
+  --green-dark-color: #0a4600;
+
+  /* Size */
+  --padding: 12px;
+
+  /* Font Size */
+  --font-large: 60px;
+  --font-midium: 50px;
+  --font-small: 25px;
+  --font-micro: 10px;
 }
 
-nav {
-  position: absolute;
-  top: 80px;
-  right: 75px;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-nav a {
-  font-size: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
+body {
+  font-family: Roboto;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* header */
+header .logo {
   padding-top: 10px;
-  padding-bottom: 10px;
-  color: black;
+  padding-left: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: var(--padding);
+}
+
+header .nav {
+  display: flex;
+  margin-inline: 30px;
+  margin-top: 50px;
+  font-size: var(--font-small);
+  margin-bottom: 45px;
+}
+
+#introduceMenu {
+  font-weight: bolder;
+}
+
+header .menu {
+  display: flex;
+  padding-right: 60px;
+}
+
+header li {
+  padding-left: 60px;
+  padding-block: 5px;
+}
+
+a {
   text-decoration-line: none;
 }
 
-.login {
-  background-color: #75bf7a;
-  color: white;
-  border-radius: 8px;
-  margin-left: 20px;
+a:link {
+  color: var(--black-color);
 }
 
-#blue {
-  color: #2b90d9;
+a:visited {
+  color: var(--black-color);
 }
 
-#green {
-  color: #43a341;
+.logIn {
+  background-color: var(--green-light-color);
+  padding-inline: 30px;
+  padding-block: 5px;
+  padding-bottom: 0px;
+  border-radius: 5px;
 }
 
-.login_content{
+.logIn a:link {
+  color: var(--white-color);
+}
+
+.logIn a:visited {
+  color: var(--white-color);
+}
+
+.login_content {
   text-align: center;
-  margin: 100px; 
+  margin: 100px;
 }
 
-.form-input{
-  font-size: 40px; 
+.form-input {
+  font-size: 40px;
 }
 
-.id-input{
-  font-size: 10px; 
+.id-input {
+  font-size: 10px;
   width: 500px;
-  height: 30px;  
-  border-radius: 8px; 
+  height: 30px;
+  border-radius: 8px;
   border-color: #43a341;
   box-shadow: 0px 2px 2px 2px grey;
 }
-
 
 .pwd-input {
   font-size: 10px;
   width: 500px;
-  height: 30px; 
+  height: 30px;
   border-radius: 8px;
   border-color: #43a341;
   box-shadow: 0px 2px 2px 2px grey;
 }
 
-.login_btn{
-  background-color: #75bf7a; 
-  color: #FFFFFF;
+.login_btn {
+  background-color: #75bf7a;
+  color: #ffffff;
   width: 500px;
-  height: 40px; 
-  font-size: 10px; 
+  height: 40px;
+  font-size: 10px;
   border-radius: 8px;
-  border-color: #FFFFFF;
-  margin: 20px; 
+  border-color: #ffffff;
+  margin: 20px;
   box-shadow: 0px 2px 2px 2px grey;
-} 
+}
 
 .login_btn:hover {
   cursor: pointer;
 }
 
-.logins{
+.logins {
   text-decoration: underline;
-  font-size: 10px; 
-  color:grey; 
+  font-size: 10px;
+  color: grey;
 }

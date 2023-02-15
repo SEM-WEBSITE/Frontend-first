@@ -120,7 +120,7 @@ section .imgText {
 
 #intro {
   width: 100%;
-  /* text-align: center; */
+  text-align: center;
 }
 
 #intro h1 {
@@ -128,13 +128,13 @@ section .imgText {
   top: 100px;
   padding: 100px;
   padding-bottom: 150px;
-  font-size: 80px;
+  font-size: 75px;
   font-weight: bolder;
   text-align: center;
 }
 
 #intro p {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 55px;
 }
 
@@ -145,7 +145,7 @@ section .imgText {
 
 .introText {
   width: 100%;
-  margin-inline: 100px;
+  /* margin-inline: 100px; */
 }
 
 hr {
@@ -157,7 +157,7 @@ hr {
 }
 
 strong {
-  font-size: 37px;
+  font-size: 32px;
 }
 
 #blue {

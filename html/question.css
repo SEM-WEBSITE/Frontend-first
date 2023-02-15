@@ -132,19 +132,36 @@ section .imgText {
   color: var(--grey-dark-color);
 }
 
-.toggle {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
+#q1,
+#q2,
+#q3 {
+  margin-top: 80px;
   padding-inline: 100px;
   background-color: #7fb77e;
-  margin-inline: 400px;
-  padding-block: 100px;
+  margin-inline: 300px;
+  padding-block: 80px;
   border-radius: 30px;
-  font-size: 30px;
+  font-size: 25px;
   box-shadow: 3px 3px 5px 3px gray;
   color: white;
-  font-weight: bold;
+  font-weight: middle;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle img {
+  align-self: start;
+}
+
+.toggle button {
+  background-color: #7fb77e;
+  border: 0px;
+}
+
+.toggle span {
 }
 
 /* footer */

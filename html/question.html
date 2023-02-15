@@ -35,25 +35,84 @@
         <h1>FAQ</h1>
         <span>자주 묻는 질문</span>
       </div>
-      <div class="toggle">
-        <span>Q. 활동기간중에 휴학이 가능한가요?</span>
-        <img src="images/play.png" />
+      <div id="q1">
+        <div class="toggle">
+          <span id="q1text"
+            ><strong>Q. 활동기간중에 휴학이 가능한가요?</strong></span
+          >
+          <button id="q1Btn" type="button" onclick="btn1()">
+            <img src="images/play.png" />
+          </button>
+        </div>
       </div>
-      <div class="toggle">
-        <span>Q. 최소 활동 기간을 채우지 못하면 어떻게 되나요?</span>
-        <img src="images/play.png" />
+      <div id="q2">
+        <div class="toggle">
+          <span id="q2text"
+            ><strong
+              >Q. 최소 활동 기간을 채우지 못하면 어떻게 되나요?</strong
+            ></span
+          >
+          <button id="q2Btn" type="button" onclick="btn2()">
+            <img src="images/play.png" />
+          </button>
+        </div>
       </div>
-      <div class="toggle">
-        <span>Q. 벌점 소거 방법에는 어떤 활동들이 있나요?</span>
-        <img src="images/play.png" />
+      <div id="q3">
+        <div class="toggle">
+          <span id="q3text"
+            ><strong>Q. 벌점 소거 방법에는 어떤 활동들이 있나요?</strong></span
+          >
+          <button id="q3Btn" type="button" onclick="btn3()">
+            <img src="images/play.png" />
+          </button>
+        </div>
       </div>
     </section>
     <footer>
       <div id="footer">
-        <button type="button">
+        <button class="toggleButton" type="button">
           <img width="28px" height="35px" src="images/up.png" />
         </button>
       </div>
     </footer>
+    <script>
+      var flag1 = false;
+      var flag2 = false;
+      var flag3 = false;
+
+      function btn1() {
+        if (!flag1) {
+          flag1 = true;
+          document.getElementById("q1text").innerHTML +=
+            "<br><br>A. SEM은 최소 활동기간이 1년입니다. <br>최소 활동 기간 내의 휴학은 인정하지 않고 있습니다. <br>만약 휴학하실 경우 수료증을 발급받지 못하실 수 있으니<br>이 점 유의하고 지원해주시길 바랍니다.";
+        } else {
+          flag1 = false;
+          document.getElementById("q1text").innerHTML =
+            "Q. 활동기간중에 휴학이 가능한가요?";
+        }
+      }
+      function btn2() {
+        if (!flag2) {
+          flag2 = true;
+          document.getElementById("q2text").innerHTML +=
+            "<br><br>A. SEM은 최소 활동기간이 1년입니다. <br>최소 활동을 채우지 않은 회원에게는 수료증을 발급해드리지 않습니다. <br>이 점 유의하고 지원해주시길 바랍니다.";
+        } else {
+          flag2 = false;
+          document.getElementById("q2text").innerHTML =
+            "Q. 최소 활동 기간을 채우지 못하면 어떻게 되나요?";
+        }
+      }
+      function btn3() {
+        if (!flag3) {
+          flag3 = true;
+          document.getElementById("q3text").innerHTML +=
+            "<br><br>A. 벌점 소거에는 다양한 방법들이 있습니다. <br>학기 중에 동아리 방을 청소하거나, <br>방학 중에 학교에 나오셔서 동아리 방의 식물에 물을 주는 방법 등이 있습니다.";
+        } else {
+          flag3 = false;
+          document.getElementById("q3text").innerHTML =
+            "Q. 벌점 소거 방법에는 어떤 활동들이 있나요?";
+        }
+      }
+    </script>
   </body>
 </html>

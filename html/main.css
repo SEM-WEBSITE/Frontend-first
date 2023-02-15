@@ -1,60 +1,127 @@
 @charset "utf-8";
 
-.logo {
-    position: relative;
-    top: 30px;
-    left: 50px;
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #2b90d9;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+  --green-light-color: #7fb77e;
+  --green-middle-color: #43a341;
+  --green-dark-color: #0a4600;
+
+  /* Size */
+  --padding: 12px;
+
+  /* Font Size */
+  --font-large: 60px;
+  --font-midium: 50px;
+  --font-small: 25px;
+  --font-micro: 10px;
 }
 
-nav {
-    position: absolute;
-    top: 80px;
-    right: 75px;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-nav a {
-    font-size: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: black;
-    text-decoration-line: none;
+body {
+  font-family: Roboto;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
 }
 
-.login {
-    background-color: #75bf7a;
-    color: white;
-    border-radius: 8px;
-    margin-left: 20px;
-}
-#blue {
-    color: #2b90d9;
+/* header */
+header .logo {
+  padding-top: 10px;
+  padding-left: 50px;
 }
 
-#green {
-    color: #43a341;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: var(--padding);
+}
+
+header .nav {
+  display: flex;
+  margin-inline: 30px;
+  margin-top: 50px;
+  font-size: var(--font-small);
+  margin-bottom: 45px;
+}
+
+#introduceMenu {
+  font-weight: bolder;
+}
+
+header .menu {
+  display: flex;
+  padding-right: 60px;
+}
+
+header li {
+  padding-left: 60px;
+  padding-block: 5px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:link {
+  color: var(--black-color);
+}
+
+a:visited {
+  color: var(--black-color);
+}
+
+.logIn {
+  background-color: var(--green-light-color);
+  padding-inline: 30px;
+  padding-block: 5px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+
+.logIn a:link {
+  color: var(--white-color);
+}
+
+.logIn a:visited {
+  color: var(--white-color);
+}
+
+.login_content {
+  text-align: center;
+  margin: 100px;
 }
 
 .outer {
-    border: 6px solid royalblue;
-    width: 300px;
-    height: 200px;
-    margin: 0 auto;
-    overflow-x: hidden;
+  border: 6px solid royalblue;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .inner-list {
-    display: flex;
-    transition: .3s ease-out;
-    height: 100%;
+  display: flex;
+  transition: 0.3s ease-out;
+  height: 100%;
 }
 
 .inner {
-    border: 6px solid olive;
-    padding: 0 16px;
+  border: 6px solid olive;
+  padding: 0 16px;
 }
 
 .button-list {
-    text-align: center;
+  text-align: center;
 }

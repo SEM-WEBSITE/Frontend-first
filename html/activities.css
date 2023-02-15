@@ -117,3 +117,19 @@ section .imgText {
   font-size: var(--font-midium);
   font-weight: bold;
 }
+
+/* footer */
+#footer {
+  display: flex;
+  margin-top: 100px;
+  background-color: #75bf7a;
+  height: 100px;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer button {
+  background-color: #75bf7a;
+  border: 0px;
+}

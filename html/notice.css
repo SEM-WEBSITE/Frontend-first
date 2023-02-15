@@ -131,6 +131,14 @@ section .imgText {
   padding: 10px;
   border-radius: 5px;
 }
+#search input {
+  background-color: var(--grey-light-color);
+  border: 0px;
+}
+#search button {
+  background-color: var(--grey-light-color);
+  border: 0px;
+}
 
 #writingTable {
   margin: auto;
@@ -165,4 +173,9 @@ caption {
   bottom: 0px;
   justify-content: center;
   align-items: center;
+}
+
+#footer button {
+  background-color: #75bf7a;
+  border: 0px;
 }

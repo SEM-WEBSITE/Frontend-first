@@ -157,3 +157,8 @@ section .imgText {
   justify-content: center;
   align-items: center;
 }
+
+#footer button {
+  background-color: #75bf7a;
+  border: 0px;
+}

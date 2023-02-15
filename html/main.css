@@ -125,3 +125,80 @@ a:visited {
 .button-list {
   text-align: center;
 }
+
+.news {
+    text-align: center; 
+}
+
+.gall {
+    text-align: center; 
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 750px 350px;
+    grid-template-rows: 70px 50px 50px 50px;
+    background-color: #7fb77e;
+    text-align: center; 
+}
+
+.footer-logo {
+    grid-row-start: 1;
+    grid-row-end: 3;  
+    color:#fff; 
+    text-align: right; 
+    margin-right: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    padding-top: 40px; 
+    padding-left: 550px; 
+}
+
+.logo-1 {
+    font-size: 50px; 
+    text-align: left; 
+}
+
+.logo-img {
+    align-content: left;
+}
+
+.logo-2 {
+    font-size: 10px; 
+}
+
+.footer-info {
+    grid-row-start: 2; 
+    grid-row-end: 4; 
+    color: #fff;
+    font-size: 13px;
+    text-align: left; 
+    margin-bottom: 100px; 
+}
+
+.insta {
+    padding: 5px; 
+}
+
+.address {
+    padding: 5px; 
+}
+
+.mail {
+    padding: 5px; 
+}
+
+.footer-setting {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5; 
+    padding-top: 50px; 
+    padding-left: 220px; 
+}
+
+.setting-btn {
+    background-color: transparent;
+    border: none;
+    width: 5px; 
+}

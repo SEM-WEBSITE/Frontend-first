@@ -135,26 +135,36 @@ a:visited {
 }
 
 .foot {
-  display: relative; 
+  display: relative;  
   background-color: #7fb77e;
 }
+
 .footer {
+  display: absolute; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 700px;
+  height: 200px;
+  margin: auto; 
+}
+
+.footer-content {
     display: grid;
-    grid-template-columns: 750px 350px;
-    grid-template-rows: 70px 50px 50px 50px;
-    text-align: center; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 20px; 
+
 }
 
 .footer-logo {
-    grid-row-start: 1;
-    grid-row-end: 3;  
+    grid-column-start: 1;
+    grid-column-end: 2;  
     color:#fff; 
     text-align: right; 
-    margin-right: 20px; 
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-    padding-top: 40px; 
-    padding-left: 550px; 
+    margin-top: 50px; 
+
 }
 
 .logo-1 {
@@ -171,12 +181,12 @@ a:visited {
 }
 
 .footer-info {
-    grid-row-start: 2; 
-    grid-row-end: 4; 
+    grid-column-start: 2; 
+    grid-column-end: 3; 
     color: #fff;
     font-size: 13px;
     text-align: left; 
-    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 .insta {
@@ -192,8 +202,9 @@ a:visited {
 }
 
 .footer-setting {
-    margin-left: 690px;
-    margin-top: 180px; 
+  display: absolute; 
+  text-align: right;
+  right: 100px;  
 }
 
 .setting-btn {

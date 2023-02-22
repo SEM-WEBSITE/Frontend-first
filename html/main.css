@@ -134,14 +134,15 @@ a:visited {
     text-align: center; 
 }
 
-.footer {
-  display: flex;
+.foot {
+  display: flex; 
   background-color: #7fb77e;
-    /* display: grid;
+}
+.footer {
+    display: grid;
     grid-template-columns: 750px 350px;
     grid-template-rows: 70px 50px 50px 50px;
-    background-color: #7fb77e;
-    text-align: center;  */
+    text-align: center; 
 }
 
 .footer-logo {
@@ -170,13 +171,12 @@ a:visited {
 }
 
 .footer-info {
-    grid-row-start: 3; 
+    grid-row-start: 2; 
     grid-row-end: 4; 
     color: #fff;
     font-size: 13px;
     text-align: left; 
-    margin-top: 70px; 
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .insta {
@@ -192,8 +192,8 @@ a:visited {
 }
 
 .footer-setting {
-    margin-left: 450px;
-    margin-top: 210px; 
+    margin-left: 690px;
+    margin-top: 180px; 
 }
 
 .setting-btn {

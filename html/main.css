@@ -135,11 +135,13 @@ a:visited {
 }
 
 .footer {
-    display: grid;
+  display: flex;
+  background-color: #7fb77e;
+    /* display: grid;
     grid-template-columns: 750px 350px;
     grid-template-rows: 70px 50px 50px 50px;
     background-color: #7fb77e;
-    text-align: center; 
+    text-align: center;  */
 }
 
 .footer-logo {
@@ -168,12 +170,13 @@ a:visited {
 }
 
 .footer-info {
-    grid-row-start: 2; 
+    grid-row-start: 3; 
     grid-row-end: 4; 
     color: #fff;
     font-size: 13px;
     text-align: left; 
-    margin-bottom: 100px; 
+    margin-top: 70px; 
+    margin-bottom: 70px;
 }
 
 .insta {
@@ -189,16 +192,24 @@ a:visited {
 }
 
 .footer-setting {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 4;
-    grid-column-end: 5; 
-    padding-top: 50px; 
-    padding-left: 220px; 
+    margin-left: 450px;
+    margin-top: 210px; 
 }
 
 .setting-btn {
     background-color: transparent;
     border: none;
     width: 5px; 
+}
+
+#body-wrapper {
+  min-height: 100%;
+  display: flex; 
+  flex-direction: column; 
+}
+
+#body-content {
+  margin-top: 100px;
+  padding-bottom: 300px;
+  /* footer의 높이 */
 }

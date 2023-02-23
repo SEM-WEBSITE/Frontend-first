@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEM 공지사항</title>
+    <link rel="stylesheet" type="text/css" href="notice.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo" alt="www.sem.com">
+        <a href="main.html">
+          <img width="300px" src="images/logo.png" />
+        </a>
+      </div>
+      <div class="nav">
+        <ul class="menu">
+          <li><a href="introduce.html">Introduce</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="notice.html" id="noticeMenu">Notice</a></li>
+          <li><a href="question.html">Question</a></li>
+        </ul>
+        <div class="logIn"><a href="login.html">Log In</a></div>
+      </div>
+    </header>
+    <section>
+      <div class="sectionPage">
+        <img src="images/notice.jpg" />
+        <p class="imgText">Notice</p>
+      </div>
+    </section>
+    <section>
+      <div id="search">
+        <input type="text" placeholder="검색하기" />
+        <button type="button">
+          <img width="15px" src="images/finder.png" />
+        </button>
+      </div>
+      <table id="writingTable" style="border-collapse: collapse">
+        <caption>
+          Board
+        </caption>
+        <tr style="border-bottom: 1px solid gray">
+          <th>번호</th>
+          <th>제목</th>
+          <th>카테고리</th>
+          <th>작성자</th>
+          <th>날짜</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>3기 합격자 명단</td>
+          <td>공지사항</td>
+          <td>운영자</td>
+          <td>2022. 12. 20</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2023년도 1학기 활동 기획안</td>
+          <td>활동 기획안</td>
+          <td>운영자</td>
+          <td>2022. 12. 20</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>청파제 행사 진행 요원 모집 안내</td>
+          <td>공지사항</td>
+          <td>운영자</td>
+          <td>2022. 12. 20</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>2022년 2학기 예산 내역</td>
+          <td>예산 내역</td>
+          <td>운영자</td>
+          <td>2022. 12. 20</td>
+        </tr>
+      </table>
+      <table id="tableNum">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>...</td>
+      </table>
+    </section>
+
+    <footer>
+      <div id="footer1">
+        <button type="button" onclick="up()">
+          <img width="28px" height="35px" src="images/up.png" />
+        </button>
+      </div>
+      <div class="foot" id="footer2" style="display: none">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-img">
+              <img width="50px" src="images/logoIcon.png" />
+              <b class="logo-1">SEM</b>
+            </div>
+            <p class="logo-2">Sookmyung Environment Movement</p>
+          </div>
+          <div class="footer-info">
+            <div class="insta">
+              <img width="15px" src="images/insta.png" />
+              <b>@sem_sookmyung</b>
+            </div>
+            <div class="address">
+              <img width="15px" src="images/Address.png" />
+              <b>(04310) 서울특별시 용산구 청파로 47길 100</b>
+            </div>
+            <div class="mail">
+              <img width="15px" src="images/Mail.png" />
+              <b>21sem@naver.com</b>
+            </div>
+          </div>
+          <div class="footer-setting">
+            <button
+              type="button"
+              class="setting-btn"
+              onclick="location.href='setting.html' "
+            >
+              <img src="images/Settings.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function up() {
+        document.getElementById("footer1").style.display = "none";
+        document.getElementById("footer2").style.display = "grid";
+      }
+    </script>
+  </body>
+</html>

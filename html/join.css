@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #2b90d9;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+  --green-light-color: #7fb77e;
+  --green-middle-color: #43a341;
+  --green-dark-color: #0a4600;
+
+  /* Size */
+  --padding: 12px;
+
+  /* Font Size */
+  --font-large: 60px;
+  --font-midium: 50px;
+  --font-small: 25px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* header */
+header .logo {
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: var(--padding);
+}
+
+header .nav {
+  display: flex;
+  margin-inline: 30px;
+  margin-top: 50px;
+  font-size: var(--font-small);
+  margin-bottom: 45px;
+}
+
+#introduceMenu {
+  font-weight: bolder;
+}
+
+header .menu {
+  display: flex;
+  padding-right: 60px;
+}
+
+header li {
+  padding-left: 60px;
+  padding-block: 5px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:link {
+  color: var(--black-color);
+}
+
+a:visited {
+  color: var(--black-color);
+}
+
+.logIn {
+  background-color: var(--green-light-color);
+  padding-inline: 30px;
+  padding-block: 5px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+
+.logIn a:link {
+  color: var(--white-color);
+}
+
+.logIn a:visited {
+  color: var(--white-color);
+}
+
+#blue {
+  color: #2b90d9;
+}
+
+#green {
+  color: #43a341;
+}
+
+.join-title {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.field {
+  padding-left: 300px;
+  margin-bottom: 50px;
+}
+
+.id-join {
+  border-color: #75bf7a;
+  width: 250px;
+  height: 20px;
+  border-radius: 2px;
+  margin-top: 50px;
+}
+.pwd-join {
+  border-color: #75bf7a;
+  width: 250px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.pwd-chk-join {
+  border-color: #75bf7a;
+  width: 250px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.name-join {
+  border-color: #75bf7a;
+  width: 250px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.tel-join {
+  border-color: #75bf7a;
+  width: 250px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.chknum-join {
+  border-color: #75bf7a;
+  width: 250px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.email-join {
+  border-color: #75bf7a;
+  width: 250px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.join-btn {
+  background-color: #75bf7a;
+  color: #ffffff;
+  width: 500px;
+  height: 40px;
+  font-size: 10px;
+  border-radius: 8px;
+  border-color: #ffffff;
+  margin: 20px;
+  box-shadow: 0px 2px 2px 2px grey;
+  margin-left: 350px;
+}

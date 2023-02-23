@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script>
+      /*
+      div사이즈 동적으로 구하기
+    */
+      const outer = document.querySelector(".outer");
+      const innerList = document.querySelector(".inner-list");
+      const inners = document.querySelectorAll(".inner");
+      let currentIndex = 0; // 현재 슬라이드 화면 인덱스
+
+      inners.forEach((inner) => {
+        inner.style.width = `${outer.clientWidth}px`; // inner의 width를 모두 outer의 width로 만들기
+      });
+
+      innerList.style.width = `${outer.clientWidth * inners.length}px`; // innerList의 width를 inner의 width * inner의 개수로 만들기
+
+      /*
+          버튼에 이벤트 등록하기
+        */
+      const buttonLeft = document.querySelector(".button-left");
+      const buttonRight = document.querySelector(".button-right");
+
+      buttonLeft.addEventListener("click", () => {
+        currentIndex--;
+        currentIndex = currentIndex < 0 ? 0 : currentIndex; // index값이 0보다 작아질 경우 0으로 변경
+        innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
+        clearInterval(interval); // 기존 동작되던 interval 제거
+        interval = getInterval(); // 새로운 interval 등록
+      });
+
+      buttonRight.addEventListener("click", () => {
+        currentIndex++;
+        currentIndex =
+          currentIndex >= inners.length ? inners.length - 1 : currentIndex; // index값이 inner의 총 개수보다 많아질 경우 마지막 인덱스값으로 변경
+        innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
+        clearInterval(interval); // 기존 동작되던 interval 제거
+        interval = getInterval(); // 새로운 interval 등록
+      });
+
+      /*
+          주기적으로 화면 넘기기
+        */
+      const getInterval = () => {
+        return setInterval(() => {
+          currentIndex++;
+          currentIndex = currentIndex >= inners.length ? 0 : currentIndex;
+          innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
+        }, 2000);
+      };
+
+      let interval = getInterval(); // interval 등록
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo" alt="www.sem.com">
+        <a href="main.html">
+          <img width="300px" src="images/logo.png" />
+        </a>
+      </div>
+      <div class="nav">
+        <ul class="menu">
+          <li><a href="introduce.html">Introduce</a></li>
+          <li><a href="activities.html" id="activitiesMenu">Activities</a></li>
+          <li><a href="notice.html">Notice</a></li>
+          <li><a href="question.html">Question</a></li>
+        </ul>
+        <div class="logIn"><a href="login.html">Log In</a></div>
+      </div>
+    </header>
+    <main id="body-wrapper">
+      <div id="body-content">
+        <div class="outer">
+          <div class="inner-list">
+            <div class="inner">
+              <h2>first...</h2>
+            </div>
+            <div class="inner">
+              <h2>second...</h2>
+            </div>
+            <div class="inner">
+              <h2>third...</h2>
+            </div>
+          </div>
+        </div>
+        <div class="button-list">
+          <button class="button-left">← Left</button>
+          <button class="button-right">Right →</button>
+        </div>
+
+        <hr color="#7fb77e" />
+
+        <div class="news">
+          <h2>소식</h2>
+        </div>
+
+        <hr color="#7fb77e" />
+
+        <div class="gall">
+          <h2>갤러리</h2>
+        </div>
+      </div>
+      <footer>
+        <div id="footer1">
+          <button type="button" onclick="up()">
+            <img width="28px" height="35px" src="images/up.png" />
+          </button>
+        </div>
+        <div class="foot" id="footer2" style="display: none">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <div class="logo-img">
+                <img width="50px" src="images/logoIcon.png" />
+                <b class="logo-1">SEM</b>
+              </div>
+              <p class="logo-2">Sookmyung Environment Movement</p>
+            </div>
+            <div class="footer-info">
+              <div class="insta">
+                <img width="15px" src="images/insta.png" />
+                <b>@sem_sookmyung</b>
+              </div>
+              <div class="address">
+                <img width="15px" src="images/Address.png" />
+                <b>(04310) 서울특별시 용산구 청파로 47길 100</b>
+              </div>
+              <div class="mail">
+                <img width="15px" src="images/Mail.png" />
+                <b>21sem@naver.com</b>
+              </div>
+            </div>
+            <div class="footer-setting">
+              <button
+                type="button"
+                class="setting-btn"
+                onclick="location.href='setting.html' "
+              >
+                <img src="images/Settings.png" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      function up() {
+        document.getElementById("footer1").style.display = "none";
+        document.getElementById("footer2").style.display = "grid";
+      }
+    </script>
+  </body>
+</html>

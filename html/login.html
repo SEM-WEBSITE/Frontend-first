@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo" alt="www.sem.com">
+        <a href="main.html">
+          <img width="300px" src="images/logo.png" />
+        </a>
+      </div>
+      <div class="nav">
+        <ul class="menu">
+          <li><a href="introduce.html">Introduce</a></li>
+          <li>
+            <a href="activities.html" id="activitiesMenu">Activities</a>
+          </li>
+          <li><a href="notice.html">Notice</a></li>
+          <li><a href="question.html">Question</a></li>
+        </ul>
+        <div class="logIn"><a href="login.html">Log In</a></div>
+      </div>
+    </header>
+
+    <main class="login_content">
+      <form>
+        <img
+          class="login_logo"
+          src="images/logo.png"
+          alt=""
+          width="320"
+          height="120"
+        />
+
+        <div class="form-input">
+          <input type="text" class="id-input" id="id" placeholder="아이디" />
+        </div>
+        <div class="form-input">
+          <input
+            type="password"
+            class="pwd-input"
+            id="Password"
+            placeholder="비밀번호"
+          />
+        </div>
+
+        <button class="login_btn" type="submit">로그인</button>
+        <div class="logins">
+          <a href="join.html">회원가입</a>
+          <a href="find_id.html">아이디 찾기</a>
+          <a href="find_pwd.html">비밀번호 찾기</a>
+        </div>
+      </form>
+    </main>
+    <footer id="footerWrap">
+      <div id="footer1">
+        <button type="button" onclick="up()">
+          <img width="28px" height="35px" src="images/up.png" />
+        </button>
+      </div>
+      <div class="foot" id="footer2" style="display: none">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-img">
+              <img width="50px" src="images/logoIcon.png" />
+              <b class="logo-1">SEM</b>
+            </div>
+            <p class="logo-2">Sookmyung Environment Movement</p>
+          </div>
+          <div class="footer-info">
+            <div class="insta">
+              <img width="15px" src="images/insta.png" />
+              <b>@sem_sookmyung</b>
+            </div>
+            <div class="address">
+              <img width="15px" src="images/Address.png" />
+              <b>(04310) 서울특별시 용산구 청파로 47길 100</b>
+            </div>
+            <div class="mail">
+              <img width="15px" src="images/Mail.png" />
+              <b>21sem@naver.com</b>
+            </div>
+          </div>
+          <div class="footer-setting">
+            <button
+              type="button"
+              class="setting-btn"
+              onclick="location.href='setting.html' "
+            >
+              <img src="images/Settings.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function up() {
+      document.getElementById("footer1").style.display = "none";
+      document.getElementById("footer2").style.display = "grid";
+    }
+  </script>
+</html>

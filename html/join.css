@@ -113,56 +113,20 @@ a:visited {
 
 .field {
   margin-bottom: 50px;
-  /* text-align: right;  */
+  text-align: right; 
 }
 
-.id-join {
-  border-color: #75bf7a;
-  width: 250px;
-  height: 20px;
-  border-radius: 2px;
-  margin-top: 50px;
-}
-.pwd-join {
-  border-color: #75bf7a;
-  width: 250px;
-  height: 20px;
-  border-radius: 2px;
+.join-main {
+  display: flex;
+  justify-content: center;
 }
 
-.pwd-chk-join {
+.input {
   border-color: #75bf7a;
   width: 250px;
   height: 20px;
   border-radius: 2px;
-}
-
-.name-join {
-  border-color: #75bf7a;
-  width: 250px;
-  height: 20px;
-  border-radius: 2px;
-}
-
-.tel-join {
-  border-color: #75bf7a;
-  width: 250px;
-  height: 20px;
-  border-radius: 2px;
-}
-
-.chknum-join {
-  border-color: #75bf7a;
-  width: 250px;
-  height: 20px;
-  border-radius: 2px;
-}
-
-.email-join {
-  border-color: #75bf7a;
-  width: 250px;
-  height: 20px;
-  border-radius: 2px;
+  
 }
 
 .join-btn {

@@ -110,19 +110,23 @@ a:visited {
 .id-input {
   font-size: 10px;
   width: 500px;
-  height: 30px;
+  height: 40px;
   border-radius: 8px;
   border-color: #43a341;
-  box-shadow: 0px 2px 2px 2px grey;
+  border-width: 1px;
+  box-shadow: 0px 1px 1px 1px grey;
+  padding: 8px;
 }
 
 .pwd-input {
   font-size: 10px;
   width: 500px;
-  height: 30px;
+  height: 40px;
   border-radius: 8px;
   border-color: #43a341;
-  box-shadow: 0px 2px 2px 2px grey;
+  border-width: 1px;
+  box-shadow: 0px 1px 1px 1px grey;
+  padding: 8px;
 }
 
 .login_btn {
@@ -142,12 +146,10 @@ a:visited {
 }
 
 .logins {
-  text-decoration: underline;
   font-size: 10px;
   color: grey;
 }
 
-/* footer */
 .foot {
   display: relative;
   background-color: var(--green-light-color);
@@ -213,6 +215,17 @@ a:visited {
   background-color: transparent;
   border: none;
   width: 5px;
+}
+
+#body-wrapper {
+  min-height: 100%;
+  display: relative;
+}
+
+#body-content {
+  margin-top: 100px;
+  padding-bottom: 300px;
+  /* footer의 높이 */
 }
 
 #footer1 {

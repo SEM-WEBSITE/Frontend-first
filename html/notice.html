@@ -88,11 +88,51 @@
     </section>
 
     <footer>
-      <div id="footer">
-        <button type="button">
+      <div id="footer1">
+        <button type="button" onclick="up()">
           <img width="28px" height="35px" src="images/up.png" />
         </button>
       </div>
+      <div class="foot" id="footer2" style="display: none">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-img">
+              <img width="50px" src="images/logoIcon.png" />
+              <b class="logo-1">SEM</b>
+            </div>
+            <p class="logo-2">Sookmyung Environment Movement</p>
+          </div>
+          <div class="footer-info">
+            <div class="insta">
+              <img width="15px" src="images/insta.png" />
+              <b>@sem_sookmyung</b>
+            </div>
+            <div class="address">
+              <img width="15px" src="images/Address.png" />
+              <b>(04310) 서울특별시 용산구 청파로 47길 100</b>
+            </div>
+            <div class="mail">
+              <img width="15px" src="images/Mail.png" />
+              <b>21sem@naver.com</b>
+            </div>
+          </div>
+          <div class="footer-setting">
+            <button
+              type="button"
+              class="setting-btn"
+              onclick="location.href='setting.html' "
+            >
+              <img src="images/Settings.png" />
+            </button>
+          </div>
+        </div>
+      </div>
     </footer>
+    <script>
+      function up() {
+        document.getElementById("footer1").style.display = "none";
+        document.getElementById("footer2").style.display = "grid";
+      }
+    </script>
   </body>
 </html>

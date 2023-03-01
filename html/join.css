@@ -113,17 +113,17 @@ a:visited {
 
 .field {
   padding-bottom: 50px;
-  text-align: right; 
+  text-align: right;
 }
 
 .join-main {
-  display: relative; 
-  padding: 60px; 
+  display: relative;
+  padding: 60px;
 }
 
 .join-table {
-  position: absolute; 
-  left: 20%; 
+  position: absolute;
+  left: 20%;
 }
 
 .input {
@@ -131,7 +131,7 @@ a:visited {
   width: 250px;
   height: 20px;
   border-radius: 2px;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 .join-btn {
